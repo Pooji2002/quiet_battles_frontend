@@ -1,0 +1,274 @@
+
+.chapter-management {
+  width: 100%;
+  color: #e8e0d2;
+}
+
+.chapter-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.chapter-management-header span,
+.chapter-list-heading span,
+.chapter-form-heading span {
+  color: #c9aa78;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.chapter-management-header h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
+.chapter-management-header p {
+  color: #a99e8e;
+  margin: 0;
+}
+
+.chapter-add-button,
+.chapter-save-button {
+  background: #c9aa78;
+  color: #171715;
+  border: 1px solid #c9aa78;
+  padding: 17px 24px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.chapter-add-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chapter-series-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.chapter-series-selector label,
+.chapter-field label {
+  font-size: 14px;
+  color: #d8cdbc;
+}
+
+.chapter-series-selector select,
+.chapter-field input,
+.chapter-field select,
+.chapter-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #171715;
+  border: 1px solid #51483a;
+  color: #eee5d8;
+  padding: 16px;
+  font: inherit;
+  outline: none;
+}
+
+.chapter-field textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.chapter-series-selector select:focus,
+.chapter-field input:focus,
+.chapter-field select:focus,
+.chapter-field textarea:focus {
+  border-color: #c9aa78;
+}
+
+.chapter-form {
+  border: 1px solid #51483a;
+  background: #211f1c;
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.chapter-form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #413b32;
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+
+.chapter-form-heading h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 12px 0 0;
+}
+
+.chapter-close-button,
+.chapter-cancel-button {
+  background: transparent;
+  color: #c9aa78;
+  border: 1px solid #66563d;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+
+.chapter-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.chapter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chapter-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.chapter-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.chapter-list-heading {
+  margin: 35px 0 22px;
+}
+
+.chapter-list-heading h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
+.chapter-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #403a31;
+}
+
+.chapter-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.chapter-table th {
+  background: #29251f;
+  color: #c9aa78;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 22px 18px;
+}
+
+.chapter-table td {
+  border-top: 1px solid #38332c;
+  padding: 22px 18px;
+  color: #e8e0d2;
+  font-size: 14px;
+}
+
+.chapter-table-title {
+  font-weight: 600;
+}
+
+.chapter-status {
+  display: inline-block;
+  border: 1px solid #8e7955;
+  color: #d7b77f;
+  padding: 7px 12px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.chapter-status.published {
+  border-color: #71866a;
+  color: #a9c49b;
+}
+
+.chapter-status.archived {
+  border-color: #777;
+  color: #aaa;
+}
+
+.chapter-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.chapter-actions button {
+  background: transparent;
+  border: 1px solid #806c4b;
+  color: #d7b77f;
+  padding: 9px 13px;
+  cursor: pointer;
+}
+
+.chapter-actions button.delete {
+  border-color: #80534b;
+  color: #d58c7d;
+}
+
+.chapter-message {
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  border: 1px solid;
+}
+
+.chapter-message.error {
+  color: #e2a093;
+  border-color: #80534b;
+  background: #2a1e1b;
+}
+
+.chapter-message.success {
+  color: #b5cba5;
+  border-color: #607451;
+  background: #20271d;
+}
+
+.chapter-empty-message {
+  padding: 35px;
+  border: 1px solid #403a31;
+  color: #a99e8e;
+}
+
+.chapter-empty-message h3 {
+  color: #e8e0d2;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .chapter-management-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .chapter-form {
+    padding: 20px;
+  }
+
+  .chapter-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-field.full-width {
+    grid-column: auto;
+  }
+
+  .chapter-form-actions {
+    flex-wrap: wrap;
+  }
+}

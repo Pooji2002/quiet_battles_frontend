@@ -1,0 +1,344 @@
+
+/* ==============================
+   CHAPTER PAGE
+================================ */
+
+.chapter-page {
+  background: #11110f;
+  color: #eeeae1;
+  min-height: 100vh;
+}
+
+.chapter-message {
+  padding: 100px 7%;
+  text-align: center;
+  color: #c5c0b6;
+}
+
+/* Chapter hero */
+
+.chapter-hero {
+  background: #24221d;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  padding: 90px 10%;
+}
+
+.chapter-hero-inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.chapter-breadcrumb,
+.chapter-eyebrow {
+  color: #c5a477;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+.chapter-hero h1 {
+  font-size: clamp(42px, 7vw, 92px);
+  line-height: 1.05;
+  font-weight: 600;
+  max-width: 1100px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.chapter-hero-line {
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: #c5a477;
+  margin-top: 45px;
+}
+
+/* Editorial image and story */
+
+.chapter-editorial {
+  max-width: 1250px;
+  margin: auto;
+  padding: 100px 7%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 75px;
+  align-items: center;
+}
+
+.chapter-image {
+  min-width: 0;
+}
+
+.chapter-image img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: saturate(65%);
+}
+
+.chapter-image > p {
+  font-size: 10px;
+  color: #b9a98f;
+  letter-spacing: 2px;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+.chapter-story-section {
+  min-width: 0;
+}
+
+.chapter-story-section h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.2;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+.chapter-story {
+  color: #c5c0b6;
+  font-size: 16px;
+  line-height: 2.1;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+/* Related product section */
+
+.chapter-product-section {
+  background: #24221d;
+  text-align: center;
+  padding: 100px 7%;
+}
+
+.chapter-product-section .chapter-eyebrow {
+  margin-bottom: 25px;
+}
+
+.chapter-product-section > h2 {
+  font-size: clamp(28px, 4vw, 45px);
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+
+.chapter-related-product {
+  max-width: 850px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  text-align: left;
+}
+
+.chapter-related-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.chapter-related-details h3 {
+  font-size: 27px;
+  margin-bottom: 18px;
+}
+
+.chapter-related-details > p {
+  color: #bdb7ac;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.chapter-related-price {
+  color: #c5a477 !important;
+  font-size: 22px;
+}
+
+.chapter-product-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #c5a477;
+  border: 1px solid #c5a477;
+  padding: 17px 22px;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.chapter-product-link:hover {
+  background: #c5a477;
+  color: #171612;
+}
+
+.chapter-no-product {
+  color: #bdb7ac;
+  margin: 20px 0 0;
+}
+
+/* Back navigation */
+
+.chapter-navigation {
+  padding: 35px 8%;
+  border-top: 1px solid #35332e;
+}
+
+.chapter-navigation a {
+  color: #c5a477;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+  .chapter-editorial {
+    gap: 40px;
+    padding: 75px 7%;
+  }
+
+  .chapter-image img {
+    height: 520px;
+  }
+
+  .chapter-related-product {
+    gap: 25px;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+  .chapter-hero {
+    min-height: 330px;
+    padding: 75px 7%;
+  }
+
+  .chapter-breadcrumb {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+
+  .chapter-hero h1 {
+    font-size: clamp(34px, 9vw, 48px);
+    line-height: 1.15;
+  }
+
+  .chapter-hero-line {
+    margin-top: 30px;
+  }
+
+  .chapter-editorial {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 7%;
+  }
+
+  .chapter-image img {
+    height: 430px;
+  }
+
+  .chapter-image > p {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .chapter-eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+  }
+
+  .chapter-story-section h2 {
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  .chapter-story {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .chapter-product-section {
+    padding: 70px 7%;
+  }
+
+  .chapter-product-section > h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .chapter-related-product {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .chapter-related-image {
+    height: 350px;
+  }
+
+  .chapter-related-details h3 {
+    font-size: 23px;
+  }
+
+  .chapter-related-details > p {
+    font-size: 13px;
+  }
+
+  .chapter-product-link {
+    padding: 15px 18px;
+    font-size: 10px;
+  }
+
+  .chapter-navigation {
+    padding: 28px 7%;
+  }
+
+  .chapter-navigation a {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* Very small phones */
+
+@media (max-width: 360px) {
+  .chapter-hero {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .chapter-editorial {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .chapter-image img {
+    height: 350px;
+  }
+
+  .chapter-product-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .chapter-related-image {
+    height: 300px;
+  }
+}

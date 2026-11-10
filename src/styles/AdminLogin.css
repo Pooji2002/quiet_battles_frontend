@@ -1,0 +1,73 @@
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #171715;
+  padding: 24px;
+  color: #e8e0d2;
+}
+
+.admin-login-form {
+  width: 100%;
+  max-width: 430px;
+  padding: 45px;
+  background: #22221f;
+  border: 1px solid #494437;
+}
+
+.admin-login-brand {
+  color: #c6ad82;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+.admin-login-form h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.admin-login-form p {
+  color: #aaa49a;
+}
+
+.admin-login-form label {
+  display: block;
+  margin: 24px 0 8px;
+  font-size: 13px;
+}
+
+.admin-login-form input {
+  width: 100%;
+  padding: 14px;
+  background: #171715;
+  border: 1px solid #575247;
+  color: #fff;
+  outline: none;
+}
+
+.admin-login-form button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  background: #c6ad82;
+  color: #171715;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.admin-login-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-login-error {
+  margin-top: 20px;
+  padding: 12px;
+  background: #492b29;
+  color: #ffd8d2;
+  font-size: 13px;
+}

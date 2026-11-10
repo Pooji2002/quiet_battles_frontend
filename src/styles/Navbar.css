@@ -1,0 +1,280 @@
+.navbar {
+  width: 100%;
+  min-height: 78px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #11110f;
+  color: #f5f1e9;
+  position: relative;
+  z-index: 100;
+}
+
+/* Brand */
+
+.brand-logo {
+  color: #f5f1e9;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.brand-logo span {
+  font-size: 11px;
+  vertical-align: top;
+  margin-left: 2px;
+}
+
+/* Desktop navigation */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a,
+.nav-actions > a:not(.cart-nav-link),
+.nav-logout {
+  color: #f5f1e9;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-actions > a:hover,
+.nav-logout:hover {
+  color: #c7ae81;
+}
+
+/* Right side actions */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-user {
+  color: #c7ae81;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.nav-logout {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cart-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #f5f1e9;
+  text-decoration: none;
+}
+
+.cart-nav-link:hover {
+  color: #c7ae81;
+}
+
+.cart-count {
+  font-size: 12px;
+  color: #c7ae81;
+}
+
+/* Hamburger */
+
+.menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #f5f1e9;
+  cursor: pointer;
+  padding: 6px;
+}
+
+/* Mobile dropdown */
+
+.mobile-menu {
+  display: none;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 900px) {
+  .navbar {
+    min-height: 70px;
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-actions {
+    gap: 14px;
+  }
+
+  .brand-logo {
+    font-size: 18px;
+  }
+
+  .nav-links a,
+  .nav-actions > a:not(.cart-nav-link),
+  .nav-logout {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 68px;
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-actions > a:not(.cart-nav-link),
+  .nav-user,
+  .nav-logout {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 25px 7% 30px;
+    background: #11110f;
+    border-top: 1px solid #34332e;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    gap: 0;
+    z-index: 200;
+  }
+
+  .mobile-menu a,
+  .mobile-logout {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    color: #f5f1e9;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: none;
+    border-bottom: 1px solid #302f2a;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .mobile-menu a:hover,
+  .mobile-logout:hover {
+    color: #c7ae81;
+  }
+
+  .mobile-menu-divider {
+    height: 1px;
+    background: #514b3e;
+    margin: 12px 0;
+  }
+
+  .mobile-user {
+    color: #c7ae81;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 12px 0;
+  }
+}
+
+/* Small mobile screens */
+
+@media (max-width: 400px) {
+  .navbar {
+    min-height: 64px;
+    padding: 0 5%;
+  }
+
+  .brand-logo {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .nav-actions {
+    gap: 12px;
+  }
+
+  .cart-nav-link svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .cart-count {
+    font-size: 11px;
+  }
+}
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 45px 8%;
+  background: #11110f;
+  color: #f4f0e8;
+  text-align: center;
+}
+
+.footer p {
+  color: #f4f0e8;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+.footer p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.footer p:nth-child(2) {
+  color: #c7ae81;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.footer p:last-child {
+  color: #a7a197;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 35px 6%;
+  }
+
+  .footer p:last-child {
+    font-size: 9px;
+    line-height: 1.8;
+  }
+}
